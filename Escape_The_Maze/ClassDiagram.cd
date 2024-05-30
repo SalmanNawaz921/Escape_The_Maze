@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Escape_The_Maze.GL.Enemy">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAggDAAAAAQAAAAABAIABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.EnemyHorizontal">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAJAKAAAACAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\EnemyHorizontal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.EnemyRandom">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="Escape_The_Maze.GL.Enemy" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="3.79" />
+        <Point X="13.5" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAgAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\EnemyRandom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.EnemySmart">
+    <Position X="14.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACABAAAAAAACAAAAAAAAAAAAAAABBAAAAAAAAAAA=</HashCode>
+      <FileName>GL\EnemySmart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.Game">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAGGESAAAICASABAIAIAAAEQIUIACCJBAIAAAAAAAA=</HashCode>
+      <FileName>GL\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameGrid" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.GameBullet">
+    <Position X="17.25" Y="0.75" Width="1.5" />
+    <InheritanceLine Type="Escape_The_Maze.GL.GameObject" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.906" Y="0.5" />
+        <Point X="11.906" Y="0.321" />
+        <Point X="18" Y="0.321" />
+        <Point X="18" Y="0.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAACBARAAAAAAAABAAABAAAAAAAAAAAE=</HashCode>
+      <FileName>GL\GameBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.GameCell">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAIAAAQAQAAAA0ACACIAAADgAAAAAAIAYAA=</HashCode>
+      <FileName>GL\GameCell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.GameCollisionDetector">
+    <Position X="19.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAgBAAAAgACEAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>GL\GameCollisionDetector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.GameGrid">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQAACAAAEIAAABAAIACAACAAgBAAAAABAAAAAA=</HashCode>
+      <FileName>GL\GameGrid.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameCell" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.GameObject">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAABAAAAEgAAQBAAAEAAEAAAABA=</HashCode>
+      <FileName>GL\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Escape_The_Maze.GL.Player">
+    <Position X="15.25" Y="0.75" Width="1.5" />
+    <InheritanceLine Type="Escape_The_Maze.GL.GameObject" FixedToPoint="true">
+      <Path>
+        <Point X="11.297" Y="0.5" />
+        <Point X="11.297" Y="0.321" />
+        <Point X="15.938" Y="0.321" />
+        <Point X="15.938" Y="0.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABBACAAAAAAAAAAAAAAAAACAAAgAAAAIA=</HashCode>
+      <FileName>GL\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Escape_The_Maze.GL.EnemyType">
+    <Position X="18.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAgAAAACBAAACAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>GL\EnemyType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Escape_The_Maze.GL.GameDirection">
+    <Position X="19.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>GL\GameDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Escape_The_Maze.GL.GameObjectType">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAMAAAAAAQAAAABAAAAgAAAAAAABAAAAEAA=</HashCode>
+      <FileName>GL\GameObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

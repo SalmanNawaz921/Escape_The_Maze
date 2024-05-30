@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93C80783-53CF-4DD1-92DC-88E826DABF38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Escape_The_Maze</RootNamespace>
+    <AssemblyName>Escape_The_Maze</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EZInput, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game_Form.Designer.cs">
+      <DependentUpon>Game_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GL\Enemy.cs" />
+    <Compile Include="GL\EnemyHorizontal.cs" />
+    <Compile Include="GL\EnemyRandom.cs" />
+    <Compile Include="GL\EnemySmart.cs" />
+    <Compile Include="GL\EnemyType.cs" />
+    <Compile Include="GL\GameBullet.cs" />
+    <Compile Include="GL\GameCollisionDetector.cs" />
+    <Compile Include="GL\GameObjectType.cs" />
+    <Compile Include="GL\Game.cs" />
+    <Compile Include="GL\GameCell.cs" />
+    <Compile Include="GL\GameDirection.cs" />
+    <Compile Include="GL\GameGrid.cs" />
+    <Compile Include="GL\GameObject.cs" />
+    <Compile Include="GL\Player.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Game_Form.resx">
+      <DependentUpon>Game_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Soldier.png" />
+    <None Include="Assets\Tile.png" />
+    <None Include="Assets\RABBIT.gif" />
+    <None Include="Assets\Objects\ArrowSign.png" />
+    <None Include="Assets\Objects\Bush %281%29.png" />
+    <None Include="Assets\Objects\Bush %282%29.png" />
+    <None Include="Assets\Objects\Crate.png" />
+    <None Include="Assets\Objects\DeadBush.png" />
+    <None Include="Assets\Objects\Sign.png" />
+    <None Include="Assets\Objects\Skeleton.png" />
+    <None Include="Assets\Objects\TombStone %281%29.png" />
+    <None Include="Assets\Objects\TombStone %282%29.png" />
+    <None Include="Assets\Objects\Tree.png" />
+    <None Include="Assets\Vampire.gif" />
+    <None Include="Assets\Werewolf.gif" />
+    <None Include="Assets\Bat.gif" />
+    <None Include="Assets\Ghost.gif" />
+    <None Include="Assets\Jack o latern.gif" />
+    <None Include="Assets\HauntedHenhouse_13.jpg" />
+    <None Include="Assets\Star.png" />
+    <None Include="Assets\KEY.gif" />
+    <None Include="Assets\Dragon.gif" />
+    <None Include="Assets\GhostRight.gif" />
+    <None Include="Assets\VampireRight.gif" />
+    <None Include="Assets\WerewolfRight.gif" />
+    <None Include="Assets\BatRight.gif" />
+    <None Include="Assets\DragonRight.gif" />
+    <None Include="Assets\Heart.gif" />
+    <None Include="Assets\RABBITDOWN.gif" />
+    <None Include="Assets\RABBITRIGHT.gif" />
+    <None Include="Assets\RABBITUP.gif" />
+    <None Include="Assets\Door.jpg" />
+    <None Include="Assets\Fire.png" />
+    <None Include="Assets\FireRight.png" />
+    <None Include="Assets\MainMenu.jpg" />
+    <None Include="Assets\Objects\tile5.png" />
+    <Content Include="bin\Debug\maze2.txt" />
+    <None Include="Assets\simplebox.png" />
+    <None Include="Assets\Tile %282%29.png" />
+    <None Include="Assets\BG.png" />
+    <None Include="Assets\Idle.png" />
+    <None Include="Assets\Walk.png" />
+    <None Include="Assets\pacman_open.png" />
+    <None Include="Assets\laserPurple.png" />
+    <None Include="Assets\ufoBlue.png" />
+    <Content Include="bin\Debug\maze.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
